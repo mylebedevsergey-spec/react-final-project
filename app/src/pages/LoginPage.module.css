@@ -1,0 +1,10 @@
+.wrap { max-width: 420px; margin: 0 auto; }
+.hint { color: var(--muted); font-size: 14px; }
+.form { display: grid; gap: 14px; background: var(--surface); padding: 24px; border-radius: var(--radius); box-shadow: 0 10px 30px rgba(29,42,34,.08); }
+.field { display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
+.field input { padding: 11px 13px; border-radius: 10px; border: 1px solid var(--line); font: inherit; }
+.field input[aria-invalid='true'] { border-color: var(--danger); }
+.error { color: var(--danger); font-size: 13px; font-style: normal; }
+.alert { padding: 11px 13px; border-radius: 10px; background: rgba(192,68,47,.12); color: var(--danger); font-weight: 600; font-size: 14px; }
+.submit { padding: 12px 18px; border: 0; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; }
+.submit:disabled { opacity: .65; cursor: progress; }

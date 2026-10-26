@@ -1,0 +1,33 @@
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 22px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.logo { font-weight: 800; font-size: 18px; }
+.nav { display: flex; gap: 6px; }
+.link, .active {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--muted);
+}
+.active { color: var(--accent); background: rgba(47, 125, 79, 0.12); }
+.actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.user { font-size: 14px; color: var(--muted); }
+.login, .logout {
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-weight: 600;
+  font-size: 14px;
+}
+.login { background: var(--accent); color: #fff; border-color: var(--accent); }
+.main { flex: 1; width: min(1120px, 100%); margin: 0 auto; padding: 26px 20px 60px; }
+.footer { padding: 18px 20px 28px; text-align: center; color: var(--muted); font-size: 13px; }
