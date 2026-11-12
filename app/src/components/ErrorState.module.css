@@ -1,0 +1,21 @@
+.error {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(192, 68, 47, 0.1);
+  color: #c0442f;
+}
+
+.message {
+  margin: 6px 0 0;
+}
+
+.retry {
+  margin-top: 12px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #c0442f;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}

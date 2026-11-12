@@ -1,10 +1,12 @@
+import styles from './ErrorState.module.css';
+
 export function ErrorState({ message, onRetry }: { message: string; onRetry?: () => void }) {
   return (
-    <div role="alert" style={{ padding: 20, borderRadius: 14, background: 'rgba(192,68,47,.10)', color: '#c0442f' }}>
+    <div className={styles.error} role="alert">
       <strong>Не удалось загрузить данные.</strong>
-      <p style={{ margin: '6px 0 0' }}>{message}</p>
+      <p className={styles.message}>{message}</p>
       {onRetry && (
-        <button type="button" onClick={onRetry} style={{ marginTop: 12, padding: '9px 16px', borderRadius: 999, border: 0, background: '#c0442f', color: '#fff', fontWeight: 700 }}>
+        <button type="button" className={styles.retry} onClick={onRetry}>
           Повторить
         </button>
       )}
